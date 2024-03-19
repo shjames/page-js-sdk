@@ -1,0 +1,42 @@
+<script id="j-tmpl" type="text/template">
+    {{ if(it.length>0){ }}    
+        {{ for (var i = 0, l = it.length; i < l; i++) {}}
+        <li class="border-tb tbox" onclick="location.href='<%=basePath%>/query/stock/toQueryProductStock.action?piNo={{=it[i].pi_no}}'">
+            <div>
+                <img src="<%=imgServerPath %>{{=it[i].pi_imgpath}}">
+            </div>
+            
+            <div class="arrow-right">
+                <h5 class="ellipsis-t"><i>{{=it[i].pi_no}}</i>{{=it[i].pi_name}}</h5>
+                <p>{{=it[i].ct_name}} {{=it[i].bd_name}}</p>
+                <p><b>价格:￥{{=it[i].pi_retailprice}}</b> | <b>库存:{{=it[i].amount}}</b></p>
+            </div>
+        </li>
+        {{ } }}
+    {{ } else { }}
+        <li class="border-tb tbox"> 
+            <h2>未检索到数据</h2>
+        </li>
+    {{ } }}
+</script>
+<script id="j-kkkkk" type="text/template">
+    {{ if(it.length>0){ }}    
+        {{ for (var i = 0, l = it.length; i < l; i++) {}}
+        <li class="border-tb tbox" onclick="location.href='<%=basePath%>/query/stock/toQueryProductStock.action?piNo={{=it[i].pi_no}}'">
+            <div>
+                <img src="<%=imgServerPath %>{{=it[i].pi_imgpath}}">
+            </div>
+            
+            <div class="arrow-right">
+                <h5 class="ellipsis-t"><i>{{=it[i].pi_no}}</i>{{=it[i].pi_name}}</h5>
+                <p>{{=it[i].ct_name}} {{=it[i].bd_name}}</p>
+                <p><b>价格:￥{{=it[i].pi_retailprice}}</b> | <b>库存:{{=it[i].amount}}</b></p>
+            </div>
+        </li>
+        {{ } }}
+    {{ } else { }}
+        <li class="border-tb tbox"> 
+            <h2>未检索到数据</h2>
+        </li>
+    {{ } }}
+</script>

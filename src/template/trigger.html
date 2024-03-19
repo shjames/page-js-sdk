@@ -1,0 +1,14 @@
+{{? it.image.src }}
+<div class="{{=it.image.size === 's'?'small-trigger' :it.image.size === 'l'? 'large-trigger':'no-trigger'}} trigger" 
+    style="top:{{=it.image.top+'%'}};
+    right:{{=it.image.size === 's'?it.image.right+'%':''}}
+    ">
+    <a href="{{=it.url?it.url:'javascript:;'}}" >
+        
+        <img src="{{=it.image.src}}"   alt="" />
+        
+    </a>
+    <button class="ma-close"></button>
+</div>
+{{?}}
+<!-- right:{{=it.image.size === 's'?it.image.right+'px':''}} -->

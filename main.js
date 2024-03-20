@@ -527,5 +527,7 @@ var Masdk = (function () {
     return instance;
   };
 })();
-var masdk = new Masdk();
-window.masdk = masdk;
+
+// var masdk = new Masdk();
+export const masdk = new Masdk();
+// window.masdk = masdk;

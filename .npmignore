@@ -1,2 +1,15 @@
-!dist/
-!package.json
+.vscode
+.DS_Store
+node_modules
+.gitignore
+package-lock.json
+/build
+/test
+.gitattributes
+/screenshot
+/main.js
+/src
+/config
+.babelrc
+/index.html
+yarn.lock

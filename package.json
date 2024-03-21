@@ -1,7 +1,7 @@
 {
   "name": "@heipi/page-js-sdk",
   "description": "JS SDK UMD",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "main": "./dist/ma.sdk.js",
   "license": "MIT",
   "author": "suhan",

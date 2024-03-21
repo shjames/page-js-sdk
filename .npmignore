@@ -1,9 +1,2 @@
-.vscode
-.DS_Store
-node_modules
-.gitignore
-package-lock.json
-/scripts
-/test
-.gitattributes
-/screenshot
+!dist/
+!package.json

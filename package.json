@@ -1,8 +1,10 @@
 {
   "name": "@heipi/page-js-sdk",
+  "description": "JS SDK UMD",
   "version": "0.0.1",
   "main": "./dist/ma.sdk.js",
   "license": "MIT",
+  "author": "suhan",
   "scripts": {
     "dev": "webpack-dev-server --mode development --config build/webpack.dev.js",
     "build": "webpack --mode production --config build/webpack.prod.js",
@@ -28,9 +30,20 @@
     "webpack": "^4.17.1",
     "webpack-dev-server": "^3.1.7"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shjames/page-js-sdk.git"
+  },
   "devDependencies": {
     "html-loader": "^0.5.5",
     "webpack-cli": "^3.1.0",
     "webpack-merge": "^4.1.4"
+  },
+  "keywords": [
+    "js-sdk",
+    "heipi"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
